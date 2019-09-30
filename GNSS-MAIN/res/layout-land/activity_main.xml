@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gnssbg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="horizontal"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gnssmaintitle" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="6"
+            android:orientation="vertical"
+            android:rowCount="1" >
+
+            <ImageView
+                android:id="@+id/includebeidoucard"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_beidou" />
+
+            <ImageView
+                android:id="@+id/includegpscard"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_gps" />
+
+            <ImageView
+                android:id="@+id/includeglonasscard"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_glonass" />
+
+            <ImageView
+                android:id="@+id/includegalileocard"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_galileo" />
+
+            <ImageView
+                android:id="@+id/include4mergedcard"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_galileo" />
+
+            <ImageView
+                android:id="@+id/includemeodifferencecard"
+                android:layout_gravity="left"
+                android:src="@drawable/logo_galileo" />
+
+        </GridLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

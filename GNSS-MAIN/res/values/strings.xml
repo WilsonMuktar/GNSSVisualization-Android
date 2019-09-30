@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GNSS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="BEIDOU_MAIN">BEIDOU NAVIGATION \n SATELLITE SYSTEM \n (北斗卫星导航系统)</string>
+	<string name="GPS_MAIN"> GLOBAL POSITIONING \n SYSTEM (GPS) \n (全球定位系统)</string>
+    <string name="GLONASS_MAIN"> GLONASS NAVIGATION \n SATELLITE SYSTEM \n (格洛纳斯卫星导航系统)</string>
+    <string name="GALILEO_MAIN"> GALILEO　NAVIGATION \n SATELLITE SYSTEM \n (伽利略卫星导航系统)</string>
+
+    
+    <string name="GNSS_BEIDOU">BEIDOU</string>
+    <string name="GNSS_GPS">GPS</string>
+    <string name="GNSS_GLONASS">GLONASS</string>
+    <string name="GNSS_GALILEO">GALILEO</string>
+    
+    <string name="menu_document">DOC</string>
+    <string name="menu_video">VIDEO</string>
+    <string name="menu_launch">LAUNCH</string>
+    <string name="menu_setting">SETTING</string>
+    <string name="sdd_fill">FILL</string>
+    <string name="sdd_radius">RADIUS</string>
+    <string name="sdd_satellite">SATELLITE</string>
+    <string name="sdd_orbit">ORBIT</string>
+    
+
+
+</resources>

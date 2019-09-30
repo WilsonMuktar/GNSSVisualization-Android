@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp" >
+
+    <TextView
+        android:id="@+id/set_systemtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/set_systemtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="2dp"
+        android:background="#50ffffff" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_set_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/set_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/set_control"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_below="@id/scroll_set_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-5dp"
+        android:minHeight="100dp" >
+
+        <TextView
+            android:id="@+id/set_cotnrol_center"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp" />
+
+        <ScrollView
+            android:id="@+id/child_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/set_cotnrol_center"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/set_control_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/set_control_display"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@id/set_cotnrol_center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/sc_display_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@layout/shape_circle"
+                android:src="@drawable/speedcircle" />
+
+            <ImageView
+                android:id="@+id/sc_display_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/speedcircle"
+                android:paddingTop="-20dp"
+                android:src="@drawable/satellite1" />
+
+            <ImageView
+                android:id="@+id/sc_display_reset"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/speedcircle"
+                android:paddingTop="15dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/set_control"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:background="#50ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/set_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:minHeight="100dp" >
+
+        <LinearLayout
+            android:id="@+id/setdisplay_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/sdd_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/sdd_fill_img"
+                    android:layout_width="30dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/off" />
+
+                <TextView
+                    android:id="@+id/sdd_fill_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sdd_fill"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sdd_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/sdd_radius_img"
+                    android:layout_width="30dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/off" />
+
+                <TextView
+                    android:id="@+id/sdd_radius_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sdd_radius"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sdd_satellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/sdd_satellite_img"
+                    android:layout_width="30dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/on" />
+
+                <TextView
+                    android:id="@+id/sdd_satellite_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sdd_satellite"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sdd_orbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/sdd_orbit_img"
+                    android:layout_width="30dp"
+                    android:layout_height="18dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/on" />
+
+                <TextView
+                    android:id="@+id/sdd_orbit_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sdd_orbit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/setdisplay_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/sd_speed_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/speedcircle" />
+
+            <TextView
+                android:id="@+id/sd_speed_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="10%"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/sd_speed_slide"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/sd_speed_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-20dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@layout/shape_line"
+                android:thumb="@layout/shape_oval" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/set_display"
+        android:layout_centerHorizontal="true" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<SatelliteSystem>
+	<Title>GLONASS</Title>
+	<OrbitCount>3</OrbitCount>
+	<SatelliteCount>24</SatelliteCount>
+	<Orbits>
+		<Orbit>
+			<Title>GLO1</Title>
+			<SatelliteCount>8</SatelliteCount>
+			<Radius>19.100</Radius>
+			<Incline>60</Incline>
+			<Ecc>0</Ecc>
+			<RAAN>0</RAAN>
+			<Perigee>0</Perigee>
+		</Orbit>
+		<Orbit>
+			<Title>GLO2</Title>
+			<SatelliteCount>8</SatelliteCount>
+			<Radius>19.100</Radius>
+			<Incline>60</Incline>
+			<Ecc>0</Ecc>
+			<RAAN>120</RAAN>
+			<Perigee>0</Perigee>
+		</Orbit>
+		<Orbit>
+			<Title>GLO3</Title>
+			<SatelliteCount>8</SatelliteCount>
+			<Radius>19.100</Radius>
+			<Incline>60</Incline>
+			<Ecc>0</Ecc>
+			<RAAN>240</RAAN>
+			<Perigee>0</Perigee>
+		</Orbit>
+	</Orbits>
+</SatelliteSystem>

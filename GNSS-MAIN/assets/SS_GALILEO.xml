@@ -1,0 +1,34 @@
+<SatelliteSystem>
+	<Title>GALILEO</Title>
+	<OrbitCount>3</OrbitCount>
+	<SatelliteCount>30</SatelliteCount>
+	<Orbits>
+		<Orbit>
+			<Title>GAL1</Title>
+			<SatelliteCount>10</SatelliteCount>
+			<Radius>19.100</Radius>
+			<Incline>56</Incline>
+			<Ecc>0</Ecc>
+			<RAAN>0</RAAN>
+			<Perigee>0</Perigee>
+		</Orbit>
+		<Orbit>
+			<Title>GAL2</Title>
+			<SatelliteCount>10</SatelliteCount>
+			<Radius>19.100</Radius>
+			<Incline>56</Incline>
+			<Ecc>0</Ecc>
+			<RAAN>120</RAAN>
+			<Perigee>0</Perigee>
+		</Orbit>
+		<Orbit>
+			<Title>GAL3</Title>
+			<SatelliteCount>10</SatelliteCount>
+			<Radius>19.100</Radius>
+			<Incline>56</Incline>
+			<Ecc>0</Ecc>
+			<RAAN>240</RAAN>
+			<Perigee>0</Perigee>
+		</Orbit>
+	</Orbits>
+</SatelliteSystem>
